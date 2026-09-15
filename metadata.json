@@ -1,0 +1,6 @@
+{
+  "name": "VillaOS AI",
+  "description": "AI-powered operating system for luxury villas, guest houses, and short-term rental properties in Bali.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

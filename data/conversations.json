@@ -1,0 +1,145 @@
+[
+  {
+    "id": "conv-guest-prop-canggu-01-1789012187816",
+    "workspaceId": "ws-demo-1",
+    "propertyId": "prop-canggu-01",
+    "propertyName": "Villa prop-canggu-01",
+    "guestId": "guest-prop-canggu-01",
+    "guestName": "Sophia Loren",
+    "guestAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+    "channel": "Guest Portal",
+    "lastMessage": "Confirmed! Our driver Wayan will meet you at the lobby at 11:00 AM.",
+    "lastMessageTime": "14:32",
+    "unreadCount": 2,
+    "messages": [
+      {
+        "id": "msg-welcome-1789012187816",
+        "sender": "host",
+        "text": "Welcome to Villa prop-canggu-01! Our team is on call to make your Bali stay seamless. You can request housekeeping, report any issues, or message our concierge here anytime.",
+        "timestamp": "03:49 AM",
+        "channel": "Guest Portal"
+      },
+      {
+        "id": "msg-test-1789012187852",
+        "sender": "guest",
+        "text": "Could you arrange an airport transfer on check-out day?",
+        "timestamp": "14:30",
+        "channel": "Guest Portal"
+      },
+      {
+        "id": "msg-reply-1789012187852",
+        "sender": "host",
+        "text": "Confirmed! Our driver Wayan will meet you at the lobby at 11:00 AM.",
+        "timestamp": "14:32",
+        "channel": "Guest Portal"
+      },
+      {
+        "id": "msg-test-1789012252736",
+        "sender": "guest",
+        "text": "Could you arrange an airport transfer on check-out day?",
+        "timestamp": "14:30",
+        "channel": "Guest Portal"
+      },
+      {
+        "id": "msg-reply-1789012252737",
+        "sender": "host",
+        "text": "Confirmed! Our driver Wayan will meet you at the lobby at 11:00 AM.",
+        "timestamp": "14:32",
+        "channel": "Guest Portal"
+      }
+    ],
+    "aiSuggestedReply": "Hi Sophia, I would be happy to book our private driver for your airport transfer!"
+  },
+  {
+    "workspaceId": "ws-bali-01",
+    "id": "conv-1",
+    "guestId": "guest-3",
+    "guestName": "Sophia Lindqvist",
+    "guestAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+    "propertyId": "prop-3",
+    "propertyName": "Villa Canggu 08",
+    "channel": "WhatsApp",
+    "lastMessage": "Can I check in early today around 1:00 PM?",
+    "lastMessageTime": "10:42 AM",
+    "unreadCount": 1,
+    "reservationId": "res-103",
+    "aiSuggestedReply": "Hi Sophia! Yes, early check-in at 1:00 PM is available today as cleaning finishes at 12:30 PM. We can arrange this for an additional IDR 350,000 as per Villa Canggu rules. Would you like me to confirm this and have Wayan welcome you with iced coconuts?",
+    "messages": [
+      {
+        "id": "m-1",
+        "sender": "guest",
+        "text": "Hi VillaOS concierge! Our flight SQ942 just landed early at Ngurah Rai.",
+        "timestamp": "10:35 AM",
+        "channel": "WhatsApp"
+      },
+      {
+        "id": "m-2",
+        "sender": "guest",
+        "text": "Can I check in early today around 1:00 PM?",
+        "timestamp": "10:42 AM",
+        "channel": "WhatsApp"
+      }
+    ]
+  },
+  {
+    "workspaceId": "ws-bali-01",
+    "id": "conv-2",
+    "guestId": "guest-1",
+    "guestName": "Oliver Thorne",
+    "guestAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "propertyId": "prop-1",
+    "propertyName": "Villa Seminyak 04",
+    "channel": "Airbnb",
+    "lastMessage": "The floating breakfast this morning was sensational. Could we book an in-villa massage for 4 PM tomorrow?",
+    "lastMessageTime": "09:15 AM",
+    "unreadCount": 0,
+    "reservationId": "res-101",
+    "aiSuggestedReply": "Good morning Oliver! So delighted you enjoyed the floating breakfast. I can immediately book two therapists from Karsa Luxury Spa for 4:00 PM tomorrow at IDR 350,000/person. Shall I reserve this for you?",
+    "messages": [
+      {
+        "id": "m-11",
+        "sender": "host",
+        "text": "Welcome to Villa Seminyak 04, Oliver! Wayan has placed your chilled young coconuts in the fridge.",
+        "timestamp": "Sep 4, 3:00 PM",
+        "channel": "Airbnb"
+      },
+      {
+        "id": "m-12",
+        "sender": "guest",
+        "text": "The floating breakfast this morning was sensational. Could we book an in-villa massage for 4 PM tomorrow?",
+        "timestamp": "09:15 AM",
+        "channel": "Airbnb"
+      }
+    ]
+  },
+  {
+    "workspaceId": "ws-bali-01",
+    "id": "conv-3",
+    "guestId": "guest-5",
+    "guestName": "Chloe Bennett",
+    "guestAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+    "propertyId": "prop-4",
+    "propertyName": "Villa Uluwatu 03",
+    "channel": "Instagram",
+    "lastMessage": "Hey! Saw your cliff sunset reel. Do you still have availability for check-in tomorrow?",
+    "lastMessageTime": "Yesterday",
+    "unreadCount": 0,
+    "reservationId": "res-105",
+    "messages": [
+      {
+        "id": "m-21",
+        "sender": "guest",
+        "text": "Hey! Saw your cliff sunset reel. Do you still have availability for check-in tomorrow?",
+        "timestamp": "Yesterday 4:10 PM",
+        "channel": "Instagram"
+      },
+      {
+        "id": "m-22",
+        "sender": "ai",
+        "text": "Hi Chloe! Yes, Villa Uluwatu 03 is ready for your arrival tomorrow. Your reservation #res-105 is confirmed, and our private clifftop driver can meet you at Terminal International.",
+        "timestamp": "Yesterday 4:12 PM",
+        "channel": "Instagram"
+      }
+    ]
+  }
+]

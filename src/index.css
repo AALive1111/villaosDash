@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --natural-olive: #606C38;
+    --natural-olive-dark: #4C572C;
+    --natural-terracotta: #BC6C25;
+    --natural-ochre: #DDA15E;
+    --natural-cream: #FEFAE0;
+    --natural-cream-border: #F1EDD4;
+    --natural-canvas: #FAF9F6;
+    --natural-surface: #FDFCFB;
+    --natural-card: #FFFFFF;
+    --natural-stone: #F2F1ED;
+    --natural-border: #E8E6E1;
+    --natural-text: #2D2926;
+  }
+
+  /* VillaOS Luxury Night Mode Variables */
+  html.night,
+  [data-theme="night"] {
+    --natural-olive: #9BB05F;
+    --natural-olive-dark: #7A8E43;
+    --natural-terracotta: #E5A663;
+    --natural-ochre: #E8B97C;
+    --natural-cream: #282318;
+    --natural-cream-border: #4A3E26;
+    --natural-canvas: #12110F;
+    --natural-surface: #1B1916;
+    --natural-card: #201E1A;
+    --natural-stone: #26231E;
+    --natural-border: #2D2A24;
+    --natural-text: #F4F2EE;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #FAF9F6;
+    color: #2D2926;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  html.night body {
+    background-color: #12110F;
+    color: #F4F2EE;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* ==========================================================================
+   VILLAOS NIGHT MODE ENGINE
+   Warm obsidian, deep stone, and soft lantern amber for ambient evening viewing
+   ========================================================================== */
+
+/* Main canvas, sidebars, headers & surface backgrounds */
+html.night .bg-\[\#FAF9F6\],
+html.night .bg-\[\#FAF9F5\],
+html.night .bg-\[\#FAF9F5\]\/60 {
+  background-color: #12110F !important;
+}
+
+html.night .bg-white,
+html.night .bg-\[\#FFFFFF\],
+html.night .bg-\[\#FDFCFB\] {
+  background-color: #1B1916 !important;
+}
+
+html.night .bg-white\/95,
+html.night .bg-white\/90,
+html.night .bg-white\/80 {
+  background-color: rgba(27, 25, 22, 0.95) !important;
+}
+
+html.night .bg-stone-50 {
+  background-color: #171512 !important;
+}
+
+html.night .bg-stone-100,
+html.night .bg-\[\#F2F1ED\],
+html.night .bg-\[\#F9F8F6\] {
+  background-color: #24211C !important;
+}
+
+html.night .bg-stone-200 {
+  background-color: #2F2C25 !important;
+}
+
+/* Sidebar & Header specific overrides */
+html.night #villaos-sidebar {
+  background-color: #161411 !important;
+  border-right-color: #2D2A24 !important;
+  color: #F4F2EE !important;
+}
+
+html.night header {
+  background-color: rgba(22, 20, 17, 0.94) !important;
+  border-bottom-color: #2D2A24 !important;
+}
+
+/* Warm Cream and Brand Badges in Night Mode */
+html.night .bg-\[\#FEFAE0\] {
+  background-color: #2B2417 !important;
+}
+
+html.night .bg-\[\#FEFAE0\]\/70 {
+  background-color: rgba(43, 36, 23, 0.7) !important;
+}
+
+html.night .border-\[\#F1EDD4\] {
+  border-color: #4A3E26 !important;
+}
+
+/* Typography & Contrast in Night Mode */
+html.night .text-\[\#2D2926\],
+html.night .text-stone-900 {
+  color: #F4F2EE !important;
+}
+
+html.night .text-stone-800 {
+  color: #E6E3DC !important;
+}
+
+html.night .text-stone-700 {
+  color: #C8C4BC !important;
+}
+
+html.night .text-stone-600 {
+  color: #ADA89E !important;
+}
+
+html.night .text-stone-500 {
+  color: #918C82 !important;
+}
+
+html.night .text-stone-400 {
+  color: #767167 !important;
+}
+
+html.night .text-\[\#606C38\] {
+  color: #9BB05F !important;
+}
+
+html.night .text-\[\#BC6C25\] {
+  color: #E5A663 !important;
+}
+
+/* Borders & Dividers in Night Mode */
+html.night .border-\[\#E8E6E1\],
+html.night .border-\[\#E8E6E1\]\/60,
+html.night .border-stone-200,
+html.night .border-stone-200\/90,
+html.night .border-stone-200\/80,
+html.night .border-stone-200\/60,
+html.night .border-stone-100 {
+  border-color: #2D2A24 !important;
+}
+
+html.night .border-stone-300 {
+  border-color: #3E3A32 !important;
+}
+
+html.night .border-white {
+  border-color: #332F28 !important;
+}
+
+html.night .divide-\[\#E8E6E1\] > :not([hidden]) ~ :not([hidden]),
+html.night .divide-stone-100 > :not([hidden]) ~ :not([hidden]),
+html.night .divide-stone-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #2D2A24 !important;
+}
+
+/* Form Inputs, Selects & Textareas in Night Mode */
+html.night input:not([type="checkbox"]):not([type="radio"]),
+html.night select,
+html.night textarea {
+  background-color: #171512 !important;
+  border-color: #38342C !important;
+  color: #F4F2EE !important;
+}
+
+html.night input::placeholder,
+html.night textarea::placeholder {
+  color: #6C685F !important;
+}
+
+/* Hover States in Night Mode */
+html.night .hover\:bg-stone-50:hover {
+  background-color: #221F1A !important;
+}
+
+html.night .hover\:bg-stone-100:hover,
+html.night .hover\:bg-\[\#F2F1ED\]:hover {
+  background-color: #292620 !important;
+}
+
+html.night .hover\:bg-white:hover {
+  background-color: #24211C !important;
+}
+
+html.night .hover\:text-\[\#2D2926\]:hover {
+  color: #FFFFFF !important;
+}
+
+html.night .hover\:border-stone-300:hover {
+  border-color: #4B463C !important;
+}
+
+/* Modals & Dropdowns in Night Mode */
+html.night .shadow-xl,
+html.night .shadow-2xl,
+html.night .shadow-lg,
+html.night .shadow-md,
+html.night .shadow-sm,
+html.night .shadow-xs,
+html.night .shadow-2xs {
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.65) !important;
+}
+
+/* Status Cards & Accent Badges calibrated for dark visibility */
+html.night .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.14) !important;
+}
+html.night .text-emerald-700,
+html.night .text-emerald-800 {
+  color: #34D399 !important;
+}
+
+html.night .bg-amber-50,
+html.night .bg-orange-50 {
+  background-color: rgba(245, 158, 11, 0.14) !important;
+}
+html.night .text-amber-700,
+html.night .text-amber-800,
+html.night .text-orange-800 {
+  color: #FBBF24 !important;
+}
+
+html.night .bg-rose-50,
+html.night .bg-red-50 {
+  background-color: rgba(244, 63, 94, 0.14) !important;
+}
+html.night .text-rose-700,
+html.night .text-rose-800,
+html.night .text-red-700 {
+  color: #FB7185 !important;
+}
+
+html.night .bg-sky-50,
+html.night .bg-indigo-50,
+html.night .bg-blue-50 {
+  background-color: rgba(56, 189, 248, 0.14) !important;
+}
+html.night .text-sky-700,
+html.night .text-sky-800,
+html.night .text-indigo-700,
+html.night .text-blue-700 {
+  color: #7DD3FC !important;
+}
+
+html.night .bg-purple-50 {
+  background-color: rgba(168, 85, 247, 0.14) !important;
+}
+html.night .text-purple-700 {
+  color: #C084FC !important;
+}
+
+/* Demo workspace announcement bar */
+html.night .bg-orange-50 {
+  background-color: rgba(234, 88, 12, 0.15) !important;
+  border-bottom-color: rgba(234, 88, 12, 0.25) !important;
+}
+html.night .text-orange-800 {
+  color: #FB923C !important;
+}
+
+/* Custom scrollbars with natural tone styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F1ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5D3CC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BC6C25;
+}
+
+html.night ::-webkit-scrollbar-track {
+  background: #171512;
+}
+html.night ::-webkit-scrollbar-thumb {
+  background: #38342C;
+}
+html.night ::-webkit-scrollbar-thumb:hover {
+  background: #E5A663;
+}
